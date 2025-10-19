@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <div className="w-full bg-stone-400 flex flex-col relative">
-      <div className="text-white hidden md:flex flex-col md:flex-row justify-center font-bold md:text-2xl">
+      <div className="text-white hidden md:flex flex-col md:flex-row justify-center font-bold md:text-xl">
         <FaqNav href={'/'} label={"LAMAN UTAMA"} />
         <FaqNav href={'/teknik-pengurusan'} label={"TEKNIK-TEKNIK PENGURUSAN"} />
         <FaqNav href={'/rujukan-tambahan'} label={"RUJUKAN TAMBAHAN"} />
