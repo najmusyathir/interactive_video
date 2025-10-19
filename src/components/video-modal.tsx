@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import { CircledCloseIcon } from "./icons"
 
-export default function VideoModal({ src, onClose, checkpoints }: { src: string; onClose: () => void; checkpoints: { time: number; text: string }[] }) {
+export default function VideoModal({ data, onClose, }: { data: any; onClose: () => void; }) {
   const videoRef = useRef<HTMLVideoElement | null>(null)
   const [showMsg, setShowMsg] = useState(false)
   const [msg, setMsg] = useState("")
@@ -15,7 +15,7 @@ export default function VideoModal({ src, onClose, checkpoints }: { src: string;
     if (!video) return
 
     const handleTime = () => {
-      const next = checkpoints[checkpointIndex]
+      const next = data.flows[checkpointIndex]
       if (next && video.currentTime >= next.time) {
         video.pause()
         setMsg(next.text)
@@ -46,7 +46,7 @@ export default function VideoModal({ src, onClose, checkpoints }: { src: string;
         <div className="overflow-hidden rounded-2xl relative">
           <video
             ref={videoRef}
-            src={src}
+            src={data.src}
             className="w-full"
             controls
             controlsList="nodownload noremoteplayback"
