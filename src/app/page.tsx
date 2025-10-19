@@ -44,9 +44,9 @@ export default function Home() {
             </button>
           </div>
         </span>
-        
+
         {
-          showVid && <VideoModal  src={"/videos/landing.mp4"}/>
+          showVid && <VideoModal src={"/videos/landing.mp4"} onClose={() => setShowVid(false)} />
         }
       </div>
     </div>
