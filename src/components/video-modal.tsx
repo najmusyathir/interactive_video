@@ -3,18 +3,12 @@
 import { useEffect, useRef, useState } from "react"
 import { CircledCloseIcon } from "./icons"
 
-export default function VideoModal({ src, onClose }: { src: string; onClose: () => void }) {
+export default function VideoModal({ src, onClose, checkpoints }: { src: string; onClose: () => void; checkpoints: { time: number; text: string }[] }) {
   const videoRef = useRef<HTMLVideoElement | null>(null)
   const [showMsg, setShowMsg] = useState(false)
   const [msg, setMsg] = useState("")
   const [checkpointIndex, setCheckpointIndex] = useState(0)
   const [showClose, setShowClose] = useState(false)
-
-  const checkpoints = [
-    { time: 5, text: "Here 1 message" },
-    { time: 12, text: "Here 2 message" },
-    { time: 18, text: "Here 3 message" },
-  ]
 
   useEffect(() => {
     const video = videoRef.current

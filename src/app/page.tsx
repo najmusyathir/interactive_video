@@ -1,7 +1,7 @@
 "use client"
 
 import { CircledPlayIcon } from "@/components/icons";
-import VideoModal from "@/components/video_modal";
+import VideoModal from "@/components/video-modal";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -46,7 +46,12 @@ export default function Home() {
         </span>
 
         {
-          showVid && <VideoModal src={"/videos/landing.mp4"} onClose={() => setShowVid(false)} />
+          showVid && <VideoModal src={"/videos/landing.mp4"} onClose={() => setShowVid(false)}
+            checkpoints={[
+              { time: 5, text: "Here 1 message" },
+              { time: 12, text: "Here 2 message" },
+              { time: 18, text: "Here 3 message" },
+            ]} />
         }
       </div>
     </div>
