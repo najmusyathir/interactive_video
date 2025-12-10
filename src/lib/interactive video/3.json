@@ -1,0 +1,17 @@
+{
+    "src": "/videos/landing.mp4",
+    "flows": [
+        {
+            "time": 2,
+            "text": "Here is setup 3"
+        },
+        {
+            "time": 12,
+            "text": "Here 2 message"
+        },
+        {
+            "time": 18,
+            "text": "Here 3 message"
+        }
+    ]
+}

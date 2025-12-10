@@ -14,6 +14,19 @@ export default function VideoModal({ data, onClose, }: { data: any; onClose: () 
     const video = videoRef.current
     if (!video) return
 
+    const timeoutId = setTimeout(() => {
+      video.play().catch(() => {
+        // Autoplay might be blocked by the browser; ignore the error
+      })
+    }, 1000)
+
+    return () => clearTimeout(timeoutId)
+  }, [])
+
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return
+
     const handleTime = () => {
       const next = data.flows[checkpointIndex]
       if (next && video.currentTime >= next.time) {

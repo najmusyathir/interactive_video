@@ -1,28 +1,36 @@
 "use client"
 import VideoModal from "@/components/video-modal";
-import landingVideoFlow from "@/lib/interactive video/landing.json";
+import video1 from "@/lib/interactive video/1.json";
+import video2 from "@/lib/interactive video/2.json";
+import video3 from "@/lib/interactive video/3.json";
 
 import Image from "next/image";
 import { useState } from "react";
 
 export default function TeknikPengurusan() {
-  const [showVid, setShowVid] = useState(false);
+  const [showVid, setShowVid] = useState(0);
 
   const steps = [
     {
+      id: 1,
       img: "/images/bg-penyahpekaan-sistematik.webp",
       title: "Penyahpekaan Sistematik",
       desc: "Berhadapan dengan situasi cemas secara berperingkat, bermula dari mudah hingga sukar, supaya rasa takut beransur kurang.",
+      video: video1,
     },
     {
+      id: 2,
       img: "/images/bg-berhenti-berfikir.webp",
       title: "Berhenti Berfikir",
       desc: "Menghentikan fikiran negatif dengan teknik kawalan mental untuk menenangkan diri secara aktif.",
+      video: video2,
     },
     {
+      id: 3,
       img: "/images/bg-mengstrucktur-semula-kognitif.webp",
       title: "Mengstruktur Semula Kognitif",
       desc: "Menilai semula pemikiran yang salah dan menggantikannya dengan yang lebih rasional dan positif.",
+      video: video3,
     },
   ];
 
@@ -55,7 +63,7 @@ export default function TeknikPengurusan() {
                 <h4 className="text-xl font-semibold">{step.title}</h4>
                 <p className="text-sm">{step.desc}</p>
                 <button
-                  onClick={() => setShowVid(true)}
+                  onClick={() => setShowVid(step.id)}
                   className="px-4 py-2 rounded-full bg-slate-50 text-slate-800 hover:text-slate-50 hover:bg-slate-700 duration-200 cursor-pointer text-nowrap text-sm"
                 >
                   Main sekarang
@@ -66,7 +74,7 @@ export default function TeknikPengurusan() {
         </div>
       </div>
 
-      {showVid && <VideoModal onClose={() => setShowVid(false)} data={landingVideoFlow} />}
+      {(showVid != 0) && <VideoModal onClose={() => setShowVid(0)} data={steps[showVid - 1].video} />}
     </div>
   );
 }
