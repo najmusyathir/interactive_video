@@ -3,12 +3,31 @@
 import { useEffect, useRef, useState } from "react"
 import { CircledCloseIcon } from "./icons"
 
-export default function VideoModal({ data, onClose, }: { data: any; onClose: () => void; }) {
+type FlowOption = {
+  id: string
+  label: string
+  correct?: boolean
+}
+
+type Flow = {
+  time: number
+  text: string
+  options?: FlowOption[]
+}
+
+type VideoData = {
+  src: string
+  flows: Flow[]
+}
+
+export default function VideoModal({ data, onClose, }: { data: VideoData; onClose: () => void; }) {
   const videoRef = useRef<HTMLVideoElement | null>(null)
   const [showMsg, setShowMsg] = useState(false)
-  const [msg, setMsg] = useState("")
+  const [currentFlow, setCurrentFlow] = useState<Flow | null>(null)
   const [checkpointIndex, setCheckpointIndex] = useState(0)
   const [showClose, setShowClose] = useState(false)
+  const [wrongOption, setWrongOption] = useState<string | null>(null)
+  const [correctOption, setCorrectOption] = useState<string | null>(null)
 
   useEffect(() => {
     const video = videoRef.current
@@ -31,8 +50,10 @@ export default function VideoModal({ data, onClose, }: { data: any; onClose: () 
       const next = data.flows[checkpointIndex]
       if (next && video.currentTime >= next.time) {
         video.pause()
-        setMsg(next.text)
+        setCurrentFlow(next)
         setShowMsg(true)
+        setWrongOption(null)
+        setCorrectOption(null)
       }
     }
 
@@ -43,6 +64,9 @@ export default function VideoModal({ data, onClose, }: { data: any; onClose: () 
   const handleContinue = () => {
     setShowMsg(false)
     setCheckpointIndex(prev => prev + 1)
+    setCurrentFlow(null)
+    setWrongOption(null)
+    setCorrectOption(null)
     videoRef.current?.play()
   }
 
@@ -66,15 +90,58 @@ export default function VideoModal({ data, onClose, }: { data: any; onClose: () 
             onEnded={handleEnd}
           />
 
-          {showMsg && (
-            <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-white text-xl gap-4">
-              <p>{msg}</p>
-              <button
-                onClick={handleContinue}
-                className="bg-white text-black px-4 py-2 rounded-md cursor-pointer hover:bg-gray-100"
-              >
-                Okay
-              </button>
+          {showMsg && currentFlow && (
+            <div className="absolute inset-0 bg-slate-900/70 backdrop-blur-sm flex items-center justify-center px-4">
+              <div className="w-full max-w-xl bg-white/95 text-slate-900 rounded-2xl shadow-2xl border border-slate-200 p-6 space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="h-10 w-10 rounded-full bg-slate-900 text-white flex items-center justify-center text-lg font-semibold">
+                    Q{checkpointIndex + 1}
+                  </div>
+                  <div className="space-y-2">
+                    <p className="text-lg font-semibold leading-snug">{currentFlow.text}</p>
+                    <p className="text-sm text-slate-500">Pilih jawapan yang betul untuk teruskan.</p>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {(currentFlow.options && currentFlow.options.length > 0)
+                    ? currentFlow.options.map((option) => {
+                      const isWrong = wrongOption === option.id
+                      const isCorrect = correctOption === option.id
+                      return (
+                        <button
+                          key={option.id}
+                          onClick={() => {
+                            if (option.correct) {
+                              setCorrectOption(option.id)
+                              setTimeout(handleContinue, 400)
+                            } else {
+                              setWrongOption(option.id)
+                              setTimeout(() => setWrongOption(null), 1200)
+                            }
+                          }}
+                          className={[
+                            "text-left px-4 py-3 rounded-xl border transition-all duration-200",
+                            "cursor-pointer shadow-sm hover:shadow",
+                            isCorrect ? "bg-emerald-500 text-white border-emerald-500" : "",
+                            isWrong ? "bg-rose-500 text-white border-rose-500" : "",
+                            !isCorrect && !isWrong ? "bg-slate-50 border-slate-200 hover:border-slate-300" : "",
+                          ].join(" ")}
+                        >
+                          {option.label}
+                        </button>
+                      )
+                    })
+                    : (
+                      <button
+                        onClick={handleContinue}
+                        className="col-span-full bg-slate-900 text-white px-4 py-3 rounded-xl hover:bg-slate-800 transition-all"
+                      >
+                        Teruskan
+                      </button>
+                    )}
+                </div>
+              </div>
             </div>
           )}
 

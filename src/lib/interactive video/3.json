@@ -3,15 +3,33 @@
     "flows": [
         {
             "time": 2,
-            "text": "Here is setup 3"
+            "text": "Apakah fokus utama mengstruktur semula kognitif?",
+            "options": [
+                { "id": "a", "label": "Mengenal pasti dan cabar pemikiran tidak rasional", "correct": true },
+                { "id": "b", "label": "Membiarkan pemikiran negatif berterusan", "correct": false },
+                { "id": "c", "label": "Mengelak semua situasi", "correct": false },
+                { "id": "d", "label": "Hanya bergantung pada emosi", "correct": false }
+            ]
         },
         {
             "time": 12,
-            "text": "Here 2 message"
+            "text": "Apa yang perlu dilakukan selepas mengenal pasti fikiran negatif?",
+            "options": [
+                { "id": "a", "label": "Gantikan dengan pemikiran yang lebih rasional", "correct": true },
+                { "id": "b", "label": "Catat dan simpan tanpa perubahan", "correct": false },
+                { "id": "c", "label": "Perkukuh kepercayaan salah", "correct": false },
+                { "id": "d", "label": "Elakkan refleksi diri", "correct": false }
+            ]
         },
         {
             "time": 18,
-            "text": "Here 3 message"
+            "text": "Mengapa bukti sokongan penting dalam teknik ini?",
+            "options": [
+                { "id": "a", "label": "Untuk menilai kebenaran pemikiran", "correct": true },
+                { "id": "b", "label": "Untuk mengabaikan fakta", "correct": false },
+                { "id": "c", "label": "Supaya emosi lebih kuat daripada logik", "correct": false },
+                { "id": "d", "label": "Untuk mengelak perubahan pemikiran", "correct": false }
+            ]
         }
     ]
 }

@@ -3,15 +3,33 @@
     "flows": [
         {
             "time": 2,
-            "text": "Here is setup 1"
+            "text": "Apakah langkah pertama dalam penyahpekaan sistematik?",
+            "options": [
+                { "id": "a", "label": "Bayangkan situasi paling menakutkan dahulu", "correct": false },
+                { "id": "b", "label": "Mulakan dengan situasi paling mudah", "correct": true },
+                { "id": "c", "label": "Terus elakkan semua situasi", "correct": false },
+                { "id": "d", "label": "Biarkan rasa takut tanpa kawalan", "correct": false }
+            ]
         },
         {
             "time": 12,
-            "text": "Here 2 message"
+            "text": "Tujuan utama teknik ini ialah untuk…",
+            "options": [
+                { "id": "a", "label": "Meningkatkan rasa takut", "correct": false },
+                { "id": "b", "label": "Membiasakan diri secara berperingkat", "correct": true },
+                { "id": "c", "label": "Mengelak situasi selamanya", "correct": false },
+                { "id": "d", "label": "Mengurangkan fokus", "correct": false }
+            ]
         },
         {
             "time": 18,
-            "text": "Here 3 message"
+            "text": "Apa yang perlu dibuat jika timbul rasa cemas semasa latihan?",
+            "options": [
+                { "id": "a", "label": "Berhenti serta-merta tanpa cuba tenang", "correct": false },
+                { "id": "b", "label": "Tarik nafas, tenangkan diri, kemudian sambung", "correct": true },
+                { "id": "c", "label": "Paksa terus ke tahap paling sukar", "correct": false },
+                { "id": "d", "label": "Abaikan panduan keselamatan", "correct": false }
+            ]
         }
     ]
 }

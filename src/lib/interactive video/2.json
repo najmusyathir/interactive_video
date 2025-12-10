@@ -3,15 +3,33 @@
     "flows": [
         {
             "time": 2,
-            "text": "Here is setup 2"
+            "text": "Teknik Berhenti Berfikir digunakan untuk…",
+            "options": [
+                { "id": "a", "label": "Menghentikan fikiran negatif dengan sengaja", "correct": true },
+                { "id": "b", "label": "Mengabaikan semua fikiran positif", "correct": false },
+                { "id": "c", "label": "Meningkatkan rasa takut", "correct": false },
+                { "id": "d", "label": "Mendiamkan diri tanpa kawalan", "correct": false }
+            ]
         },
         {
             "time": 12,
-            "text": "Here 2 message"
+            "text": "Bagaimana isyarat berhenti biasanya diberikan?",
+            "options": [
+                { "id": "a", "label": "Menjerit tanpa sebab", "correct": false },
+                { "id": "b", "label": "Menggunakan kata kunci atau gerakan ringkas", "correct": true },
+                { "id": "c", "label": "Memikirkan lebih banyak kebimbangan", "correct": false },
+                { "id": "d", "label": "Tidak memberi sebarang isyarat", "correct": false }
+            ]
         },
         {
             "time": 18,
-            "text": "Here 3 message"
+            "text": "Selepas berhenti berfikir, apa langkah seterusnya?",
+            "options": [
+                { "id": "a", "label": "Gantikan dengan pemikiran positif", "correct": true },
+                { "id": "b", "label": "Biarkan fikiran negatif kembali", "correct": false },
+                { "id": "c", "label": "Fokus pada ketakutan", "correct": false },
+                { "id": "d", "label": "Elakkan teknik relaksasi", "correct": false }
+            ]
         }
     ]
 }
