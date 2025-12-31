@@ -139,11 +139,8 @@ export default function VideoModal({ data, onClose, }: { data: any; onClose: () 
       <div className="bg-stone-100 w-full max-w-5xl relative rounded-3xl flex flex-col border border-stone-700 shadow-2xl overflow-hidden">
         <div className="flex justify-between items-center p-4 pb-2">
           <div className="flex items-center gap-2">
-            <span className="text-sm sm:text-base font-medium text-gray-700">
-              Video
-            </span>
-            <span className="text-sm sm:text-base font-semibold text-gray-900 bg-gray-200 px-3 py-1 rounded-md">
-              {currentVideoNumber} / {totalVideos}
+            <span className="text-xs text-gray-900 font-thin bg-gray-200 px-3 py-1 rounded-full">
+              Video <span className="font-semibold" >{currentVideoNumber}</span> of <span className="font-semibold">{totalVideos}</span>
             </span>
           </div>
           <div className="cursor-pointer duration-200 hover:scale-110 transition-transform" onClick={onClose}>
@@ -178,16 +175,16 @@ export default function VideoModal({ data, onClose, }: { data: any; onClose: () 
                   
                   if (isSelectedCorrect) {
                     // Correct answer selected - green
-                    buttonClass += "bg-green-600 hover:bg-green-700 text-white scale-[1.02] shadow-lg shadow-green-500/50 border-2 border-green-400"
+                    buttonClass += "bg-green-50 text-green-500 scale-101 shadow-lg border-2 border-green-500"
                   } else if (isSelectedWrong) {
                     // Wrong answer selected - red with light background
-                    buttonClass += "bg-red-500 hover:bg-red-600 text-white animate-shake border-2 border-red-400"
+                    buttonClass += "bg-red-50 text-red-500 animate-shake border border-red-500"
                   } else if (isCorrect === true && option.correct) {
                     // Show correct answer in green even if not selected
-                    buttonClass += "bg-green-500 text-white border-2 border-green-400"
+                    buttonClass += "bg-green-50 text-green-500 border-1 border-green-500"
                   } else {
                     // Default state
-                    buttonClass += "bg-white hover:bg-gray-50 text-gray-800 border-2 border-gray-200 hover:border-gray-300 shadow-sm"
+                    buttonClass += "bg-slate-50 hover:bg-slate-100 text-slate-800 border border-gray-500 hover:border-gray-300 shadow-sm"
                   }
                   
                   // Disable buttons if correct answer already selected
@@ -216,7 +213,7 @@ export default function VideoModal({ data, onClose, }: { data: any; onClose: () 
               </p>
               <button
                 onClick={handleClose}
-                className="bg-white hover:bg-gray-100 text-gray-900 px-8 py-3 rounded-lg cursor-pointer font-medium text-base sm:text-lg transition-all duration-200 shadow-lg hover:shadow-xl mt-2"
+                className="bg-white hover:bg-gray-200 text-gray-900 px-8 py-3 rounded-lg cursor-pointer text-base transition-all duration-200 shadow-lg hover:shadow-xl mt-2"
               >
                 Tutup
               </button>
