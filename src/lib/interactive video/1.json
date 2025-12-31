@@ -1,17 +1,69 @@
 {
-    "src": "/videos/landing.mp4",
-    "flows": [
+    "videos": [
         {
-            "time": 2,
-            "text": "Here is setup 1"
-        },
-        {
-            "time": 12,
-            "text": "Here 2 message"
-        },
-        {
-            "time": 18,
-            "text": "Here 3 message"
+            "flows": [
+                {
+                    "video": {
+                        "src": "/videos/penyahpekaan/VIDEO2_1.mp4"
+                    }
+                },
+                {
+                    "popup": {
+                        "text": "DUMMY QUESTION 1: Apakah maksud Penyahpekaan Sistematik?",
+                        "options": [
+                            {
+                                "text": "A: Teknik untuk mengurangkan ketakutan secara berperingkat",
+                                "correct": true
+                            },
+                            {
+                                "text": "B: Teknik untuk meningkatkan ketakutan",
+                                "correct": false
+                            },
+                            {
+                                "text": "C: Teknik untuk mengelakkan situasi cemas",
+                                "correct": false
+                            },
+                            {
+                                "text": "D: Teknik untuk menambah tekanan",
+                                "correct": false
+                            }
+                        ]
+                    }
+                },
+                {
+                    "video": {
+                        "src": "/videos/penyahpekaan/VIDEO2_2.mp4"
+                    }
+                },
+                {
+                    "popup": {
+                        "text": "DUMMY QUESTION 2: Berapakah peringkat dalam Penyahpekaan Sistematik?",
+                        "options": [
+                            {
+                                "text": "A: 3 peringkat",
+                                "correct": false
+                            },
+                            {
+                                "text": "B: 5 peringkat",
+                                "correct": false
+                            },
+                            {
+                                "text": "C: Berperingkat dari mudah hingga sukar",
+                                "correct": true
+                            },
+                            {
+                                "text": "D: Tiada peringkat",
+                                "correct": false
+                            }
+                        ]
+                    }
+                },
+                {
+                    "video": {
+                        "src": "/videos/penyahpekaan/VIDEO2_3.mp4"
+                    }
+                }
+            ]
         }
     ]
 }

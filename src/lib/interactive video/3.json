@@ -1,17 +1,64 @@
 {
-    "src": "/videos/landing.mp4",
-    "flows": [
+    "videos": [
         {
-            "time": 2,
-            "text": "Here is setup 3"
-        },
-        {
-            "time": 12,
-            "text": "Here 2 message"
-        },
-        {
-            "time": 18,
-            "text": "Here 3 message"
+            "flows": [
+                {
+                    "video": {
+                        "src": "/videos/pengenalan/VIDEO1_1.mp4"
+                    }
+                },
+                {
+                    "popup": {
+                        "text": "DUMMY QUESTION 1: Apakah maksud Mengstruktur Semula Kognitif?",
+                        "options": [
+                            {
+                                "text": "A: Menilai semula pemikiran yang salah dan menggantikannya dengan yang lebih rasional",
+                                "correct": true
+                            },
+                            {
+                                "text": "B: Meningkatkan pemikiran negatif",
+                                "correct": false
+                            },
+                            {
+                                "text": "C: Mengelakkan semua pemikiran",
+                                "correct": false
+                            },
+                            {
+                                "text": "D: Menambah tekanan mental",
+                                "correct": false
+                            }
+                        ]
+                    }
+                },
+                {
+                    "video": {
+                        "src": "/videos/pengenalan/VIDEO1_2.mp4"
+                    }
+                },
+                {
+                    "popup": {
+                        "text": "DUMMY QUESTION 2: Apakah tujuan utama Mengstruktur Semula Kognitif?",
+                        "options": [
+                            {
+                                "text": "A: Meningkatkan pemikiran negatif",
+                                "correct": false
+                            },
+                            {
+                                "text": "B: Menggantikan pemikiran salah dengan yang rasional dan positif",
+                                "correct": true
+                            },
+                            {
+                                "text": "C: Mengelakkan semua pemikiran",
+                                "correct": false
+                            },
+                            {
+                                "text": "D: Menambah kebimbangan",
+                                "correct": false
+                            }
+                        ]
+                    }
+                }
+            ]
         }
     ]
 }

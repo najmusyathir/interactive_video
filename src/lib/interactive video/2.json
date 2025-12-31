@@ -1,17 +1,120 @@
 {
-    "src": "/videos/landing.mp4",
-    "flows": [
+    "videos": [
         {
-            "time": 2,
-            "text": "Here is setup 2"
-        },
-        {
-            "time": 12,
-            "text": "Here 2 message"
-        },
-        {
-            "time": 18,
-            "text": "Here 3 message"
+            "flows": [
+                {
+                    "video": {
+                        "src": "/videos/berhenti/VIDEO3_1.mp4"
+                    }
+                },
+                {
+                    "popup": {
+                        "text": "DUMMY QUESTION 1: Apakah maksud teknik Berhenti Berfikir?",
+                        "options": [
+                            {
+                                "text": "A: Menghentikan semua pemikiran",
+                                "correct": false
+                            },
+                            {
+                                "text": "B: Menghentikan fikiran negatif dengan teknik kawalan mental",
+                                "correct": true
+                            },
+                            {
+                                "text": "C: Meningkatkan fikiran negatif",
+                                "correct": false
+                            },
+                            {
+                                "text": "D: Mengelakkan semua pemikiran",
+                                "correct": false
+                            }
+                        ]
+                    }
+                },
+                {
+                    "video": {
+                        "src": "/videos/berhenti/VIDEO3_2.mp4"
+                    }
+                },
+                {
+                    "popup": {
+                        "text": "DUMMY QUESTION 2: Bagaimanakah teknik Berhenti Berfikir membantu?",
+                        "options": [
+                            {
+                                "text": "A: Menenangkan diri secara aktif",
+                                "correct": true
+                            },
+                            {
+                                "text": "B: Meningkatkan tekanan",
+                                "correct": false
+                            },
+                            {
+                                "text": "C: Menambah kebimbangan",
+                                "correct": false
+                            },
+                            {
+                                "text": "D: Mengelakkan semua aktiviti",
+                                "correct": false
+                            }
+                        ]
+                    }
+                },
+                {
+                    "video": {
+                        "src": "/videos/berhenti/VIDEO3_3.mp4"
+                    }
+                },
+                {
+                    "popup": {
+                        "text": "DUMMY QUESTION 3: Bilakah teknik Berhenti Berfikir paling berkesan?",
+                        "options": [
+                            {
+                                "text": "A: Semasa tidur",
+                                "correct": false
+                            },
+                            {
+                                "text": "B: Apabila fikiran negatif muncul",
+                                "correct": true
+                            },
+                            {
+                                "text": "C: Hanya pada waktu pagi",
+                                "correct": false
+                            },
+                            {
+                                "text": "D: Semasa berehat",
+                                "correct": false
+                            }
+                        ]
+                    }
+                },
+                {
+                    "video": {
+                        "src": "/videos/berhenti/VIDEO3_4.mp4"
+                    }
+                },
+                {
+                    "popup": {
+                        "text": "DUMMY QUESTION 4: Apakah langkah pertama dalam teknik Berhenti Berfikir?",
+                        "options": [
+                            {
+                                "text": "A: Mengabaikan fikiran negatif",
+                                "correct": false
+                            },
+                            {
+                                "text": "B: Mengenal pasti fikiran negatif",
+                                "correct": true
+                            },
+                            {
+                                "text": "C: Meningkatkan fikiran negatif",
+                                "correct": false
+                            },
+                            {
+                                "text": "D: Mengelakkan semua pemikiran",
+                                "correct": false
+                            }
+                        ]
+                    }
+                }
+            ]
         }
     ]
 }
