@@ -1,64 +1,32 @@
 {
     "videos": [
-        {
-            "flows": [
-                {
-                    "video": {
-                        "src": "/videos/pengenalan/VIDEO1_1.mp4"
-                    }
-                },
-                {
-                    "popup": {
-                        "text": "DUMMY QUESTION 1: Apakah tujuan utama modul pengenalan ini?",
-                        "options": [
-                            {
-                                "text": "A: Memberikan pengenalan asas tentang teknik pengurusan",
-                                "correct": true
-                            },
-                            {
-                                "text": "B: Menyelesaikan semua masalah dengan segera",
-                                "correct": false
-                            },
-                            {
-                                "text": "C: Menggantikan rawatan profesional",
-                                "correct": false
-                            },
-                            {
-                                "text": "D: Menghilangkan semua kebimbangan",
-                                "correct": false
-                            }
-                        ]
-                    }
-                },
-                {
-                    "video": {
-                        "src": "/videos/pengenalan/VIDEO1_2.mp4"
-                    }
-                },
-                {
-                    "popup": {
-                        "text": "DUMMY QUESTION 2: Apakah yang akan anda pelajari dalam modul ini?",
-                        "options": [
-                            {
-                                "text": "A: Teknik pengurusan kebimbangan dan tekanan",
-                                "correct": true
-                            },
-                            {
-                                "text": "B: Cara mengelakkan semua situasi sukar",
-                                "correct": false
-                            },
-                            {
-                                "text": "C: Menghilangkan semua emosi negatif",
-                                "correct": false
-                            },
-                            {
-                                "text": "D: Menjadi sempurna dalam semua aspek",
-                                "correct": false
-                            }
-                        ]
-                    }
-                }
-            ]
-        }
+      {
+        "flows": [
+          { "video": { "src": "/videos/pengenalan/VIDEO1_1.mp4" } },
+          {
+            "popup": {
+              "question": "Adakah fikiran anda pernah menghalang anda daripada tidur?",
+              "options": [
+                { "text": "Ya, selalu", "feedback": "Ini menandakan tahap kegelisahan yang tinggi dan boleh menjejaskan kesihatan. Namun, terdapat teknik yang dapat membantu menguruskannya." },
+                { "text": "Kadang-kadang", "feedback": "Ini mungkin tanda awal kegelisahan. Adalah baik jika kita mula mempelajari cara-cara untuk mengawalnya." }
+              ],
+              "autoNext": true
+            }
+          },
+          { "video": { "src": "/videos/pengenalan/VIDEO1_2.mp4" } },
+          {
+            "popup": {
+              "question": "Menurut anda, bahagian mana paling besar mempengaruhi kegelisahan anda?",
+              "options": [
+                { "text": "Pemikiran", "feedback": "Betul — ketiga-tiganya saling berkaitan. Itulah asas CBT. Sekarang, mari kita lihat teknik-teknik yang boleh membantu." },
+                { "text": "Emosi", "feedback": "Betul — ketiga-tiganya saling berkaitan. Itulah asas CBT. Sekarang, mari kita lihat teknik-teknik yang boleh membantu." },
+                { "text": "Tingkah Laku", "feedback": "Betul — ketiga-tiganya saling berkaitan. Itulah asas CBT. Sekarang, mari kita lihat teknik-teknik yang boleh membantu." }
+              ],
+              "autoNext": true
+            }
+          }
+        ]
+      }
     ]
-}
+  }
+  

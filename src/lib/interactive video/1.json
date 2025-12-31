@@ -9,23 +9,11 @@
                 },
                 {
                     "popup": {
-                        "text": "DUMMY QUESTION 1: Apakah maksud Penyahpekaan Sistematik?",
-                        "options": [
+                        "type": "action",
+                        "text": "Teruskan ke video seterusnya",
+                        "buttons": [
                             {
-                                "text": "A: Teknik untuk mengurangkan ketakutan secara berperingkat",
-                                "correct": true
-                            },
-                            {
-                                "text": "B: Teknik untuk meningkatkan ketakutan",
-                                "correct": false
-                            },
-                            {
-                                "text": "C: Teknik untuk mengelakkan situasi cemas",
-                                "correct": false
-                            },
-                            {
-                                "text": "D: Teknik untuk menambah tekanan",
-                                "correct": false
+                                "text": "Teruskan"
                             }
                         ]
                     }
@@ -37,30 +25,64 @@
                 },
                 {
                     "popup": {
-                        "text": "DUMMY QUESTION 2: Berapakah peringkat dalam Penyahpekaan Sistematik?",
+                        "question": "Apakah langkah mudah yang boleh anda lakukan untuk menenangkan diri?",
                         "options": [
                             {
-                                "text": "A: 3 peringkat",
-                                "correct": false
+                                "text": "Latihan pernafasan ringkas",
+                                "feedback": "Tarik nafas perlahan selama empat saat, tahan seketika, kemudian lepaskan dengan perlahan. Ulang beberapa kali sehingga tubuh terasa lebih relaks."
                             },
                             {
-                                "text": "B: 5 peringkat",
-                                "correct": false
+                                "text": "Susun tugasan mengikut keutamaan",
+                                "feedback": "Catat tugasan dalam senarai ringkas. Mulakan dengan perkara paling mudah. Ini membantu mengurangkan rasa terbeban."
                             },
                             {
-                                "text": "C: Berperingkat dari mudah hingga sukar",
-                                "correct": true
-                            },
-                            {
-                                "text": "D: Tiada peringkat",
-                                "correct": false
+                                "text": "Bergerak sebentar dari meja belajar",
+                                "feedback": "Bangun, berjalan di sekitar bilik atau regangkan badan. Perubahan persekitaran yang singkat dapat memberi kesegaran semula."
                             }
-                        ]
+                        ],
+                        "showContinue": true
                     }
                 },
                 {
                     "video": {
                         "src": "/videos/penyahpekaan/VIDEO2_3.mp4"
+                    }
+                },
+                {
+                    "popup": {
+                        "text": "Sekarang cuba lakukan pernafasan ini sendiri. Bila sudah selesai, tekan butang di bawah.",
+                        "options": [
+                            {
+                                "text": "Saya Dah Cuba",
+                                "feedback": "Bagus! Relaksasi membantu tubuh menjadi lebih tenang. Mari kita teruskan."
+                            }
+                        ],
+                        "showContinue": true
+                    }
+                },
+                {
+                    "popup": {
+                        "question": "Selepas mencuba latihan tersebut, bagaimana perasaan anda?",
+                        "options": [
+                            {
+                                "text": "Tenang",
+                                "feedback": "Bagus, ini menunjukkan bahawa teknik relaksasi memberi kesan positif."
+                            },
+                            {
+                                "text": "Sedikit lega",
+                                "feedback": "Keadaan ini adalah normal. Teruskan berlatih secara konsisten, dan kesannya akan lebih jelas dari masa ke masa."
+                            },
+                            {
+                                "text": "Masih cemas",
+                                "feedback": "Tidak mengapa. Mulakan dengan langkah yang lebih ringan dahulu. Setiap individu mempunyai kadar penyesuaian yang berbeza."
+                            }
+                        ],
+                        "autoNext": true
+                    }
+                },
+                {
+                    "video": {
+                        "src": "/videos/penyahpekaan/VIDEO2_4.mp4"
                     }
                 }
             ]
