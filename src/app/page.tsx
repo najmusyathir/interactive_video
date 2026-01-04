@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <div className="">
       <div className="absolute w-full h-full top-0 left-0 -z-10">
-        <Image src={'/bg.jpg'} alt={'background'} fill className="object-cover w-screen h-screen -z-10" />
+        <Image src={'/bg1.png'} alt={'background'} fill className="object-cover w-screen h-screen -z-10" />
       </div>
       <div className="pt-12">
         <span className="flex flex-col gap-5 bg-white/70 py-6 px-8 pl-16 w-min tracking-wide">
