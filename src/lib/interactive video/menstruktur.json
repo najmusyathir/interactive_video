@@ -1,0 +1,122 @@
+{
+  "videos": [
+    {
+      "flows": [
+        {
+          "video": {
+            "src": "/videos/menstruktur/VIDEO4_1.mp4"
+          }
+        },
+        {
+          "popup": {
+            "type": "action",
+            "buttons": [
+              {
+                "text": "Teruskan"
+              }
+            ]
+          }
+        },
+        {
+          "video": {
+            "src": "/videos/menstruktur/VIDEO4_2.mp4"
+          }
+        },
+        {
+          "popup": {
+            "text": "Apakah pemikiran pertama yang muncul di fikiran anda?",
+            "options": [
+              {
+                "text": "Saya pasti akan gagal.",
+                "feedback": "Ini adalah pemikiran melampau tanpa bukti kukuh."
+              },
+              {
+                "text": "Saya tidak cukup bijak untuk tugasan ini.",
+                "feedback": "Kebijaksanaan boleh berkembang melalui usaha dan latihan."
+              },
+              {
+                "text": "Orang lain lebih hebat daripada saya.",
+                "feedback": "Perbandingan tidak adil kerana setiap orang mempunyai kekuatan berbeza."
+              }
+            ],
+            "showContinue": true
+          }
+        },
+        {
+          "video": {
+            "src": "/videos/menstruktur/VIDEO4_3.mp4"
+          }
+        },
+        {
+          "popup": {
+            "text": "Pemikiran ini adalah...",
+            "buttons": [
+              {
+                "text": "Berdasarkan Fakta"
+              },
+              {
+                "text": "Berdasarkan Andaian"
+              }
+            ],
+            "feedback": "Kebanyakan pemikiran cemas adalah andaian, bukan fakta sebenar.",
+            "showContinue": true
+          }
+        },
+        {
+          "video": {
+            "src": "/videos/menstruktur/VIDEO4_4.mp4"
+          }
+        },
+        {
+          "popup": {
+            "options": [
+              {
+                "feedback": "Pemikiran ini membantu menurunkan reaksi cemas.",
+                "text": "Saya berasa risau, tetapi itu tidak bermaksud saya akan gagal."
+              },
+              {
+                "feedback": "Pemikiran ini membantu menurunkan reaksi cemas.",
+                "text": "Saya masih boleh belajar dan memperbaiki diri."
+              },
+              {
+                "feedback": "Pemikiran ini membantu menurunkan reaksi cemas.",
+                "text": "Saya pernah menghadapi situasi sukar sebelum ini."
+              }
+            ],
+            "showContinue": true
+          }
+        },
+        {
+          "video": {
+            "src": "/videos/menstruktur/VIDEO4_5.mp4"
+          }
+        },
+        {
+          "popup": {
+            "question": "Bagaimana perasaan anda selepas menukar pemikiran?",
+            "options": [
+              {
+                "text": "Lebih tenang",
+                "feedback": "Lebih tenang"
+              },
+              {
+                "text": "Lebih yakin",
+                "feedback": "Lebih yakin"
+              },
+              {
+                "text": "Masih sedikit risau",
+                "feedback": "Masih sedikit risau"
+              }
+            ],
+            "showContinue": true
+          }
+        },
+        {
+          "video": {
+            "src": "/videos/menstruktur/VIDEO4_6.mp4"
+          }
+        }
+      ]
+    }
+  ]
+}

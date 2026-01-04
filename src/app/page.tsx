@@ -1,11 +1,27 @@
+"use client"
+
 import { CircledPlayIcon } from "@/components/icons";
+import VideoModal from "@/components/video-modal";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+
+import landingVideoFlow from "@/lib/interactive video/landing.json"
 
 export default function Home() {
+
+  const [showVid, setShowVid] = useState(false)
+
+  useEffect(() => {
+    if (showVid) console.log('show black')
+    if (!showVid) console.log('show none')
+  }, [showVid])
+
+
+
   return (
     <div className="">
-      <div className="abslute w-full h-full top-0 left-0">
-        <Image src={'/bg.jpg'} alt={'background'} fill className="object-cover w-screen h-screen -z-10" />
+      <div className="absolute w-full h-full top-0 left-0 -z-10">
+        <Image src={'/bg1.png'} alt={'background'} fill className="object-cover w-screen h-screen -z-10" />
       </div>
       <div className="pt-12">
         <span className="flex flex-col gap-5 bg-white/70 py-6 px-8 pl-16 w-min tracking-wide">
@@ -24,11 +40,16 @@ export default function Home() {
             menguruskannya secara berperingkat
           </p>
           <div className="flex justify-center">
-            <div className="bg-gray-200 flex gap-3 items-center p-3 text-red-500 pr-8 rounded-full w-min text-lg text-nowrap font-bold hover:bg-gray-300 cursor-pointer duration-200">
+            <button onClick={e => setShowVid(!showVid)}
+              className="bg-gray-200 flex gap-3 items-center p-3 text-red-500 pr-8 rounded-full w-min text-lg text-nowrap font-bold hover:bg-gray-300 cursor-pointer duration-200">
               <CircledPlayIcon className="" size={35} /> TONTON VIDEO PENGENALAN
-            </div>
+            </button>
           </div>
         </span>
+
+        {
+          showVid && <VideoModal onClose={() => setShowVid(false)} data={landingVideoFlow} />
+        }
       </div>
     </div>
   );

@@ -1,0 +1,32 @@
+{
+    "videos": [
+      {
+        "flows": [
+          { "video": { "src": "/videos/pengenalan/VIDEO1_1.mp4" } },
+          {
+            "popup": {
+              "question": "Adakah fikiran anda pernah menghalang anda daripada tidur?",
+              "options": [
+                { "text": "Ya, selalu", "feedback": "Ini menandakan tahap kegelisahan yang tinggi dan boleh menjejaskan kesihatan. Namun, terdapat teknik yang dapat membantu menguruskannya." },
+                { "text": "Kadang-kadang", "feedback": "Ini mungkin tanda awal kegelisahan. Adalah baik jika kita mula mempelajari cara-cara untuk mengawalnya." }
+              ],
+              "autoNext": true
+            }
+          },
+          { "video": { "src": "/videos/pengenalan/VIDEO1_2.mp4" } },
+          {
+            "popup": {
+              "question": "Menurut anda, bahagian mana paling besar mempengaruhi kegelisahan anda?",
+              "options": [
+                { "text": "Pemikiran", "feedback": "Betul — ketiga-tiganya saling berkaitan. Itulah asas CBT. Sekarang, mari kita lihat teknik-teknik yang boleh membantu." },
+                { "text": "Emosi", "feedback": "Betul — ketiga-tiganya saling berkaitan. Itulah asas CBT. Sekarang, mari kita lihat teknik-teknik yang boleh membantu." },
+                { "text": "Tingkah Laku", "feedback": "Betul — ketiga-tiganya saling berkaitan. Itulah asas CBT. Sekarang, mari kita lihat teknik-teknik yang boleh membantu." }
+              ],
+              "autoNext": true
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
