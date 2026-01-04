@@ -1,0 +1,72 @@
+{
+    "videos": [
+      {
+        "flows": [
+          {
+            "video": { "src": "/videos/berhenti/VIDEO3_1.mp4" }
+          },
+          {
+            "popup": {
+              "type": "action",
+              "buttons": [{ "text": "Teruskan" }]
+            }
+          },
+          {
+            "video": { "src": "/videos/berhenti/VIDEO3_2.mp4" }
+          },
+          {
+            "popup": {
+              "question": "Adakah anda pernah mengalami fikiran negatif berulang seperti ini?",
+              "options": [
+                {
+                  "text": "Ya, kerap",
+                  "feedback": "Normal, ramai mahasiswa mengalaminya. Mari kita lihat cara menguruskannya."
+                },
+                {
+                  "text": "Jarang",
+                  "feedback": "Bagus, tetapi penting juga untuk tahu teknik ini bila fikiran negatif datang."
+                },
+                {
+                  "text": "Tidak Pernah",
+                  "feedback": "Itu bagus! Namun teknik ini tetap berguna untuk anda pelajari."
+                }
+              ],
+              "showContinue": true
+            }
+          },
+          {
+            "video": { "src": "/videos/berhenti/VIDEO3_3.mp4" }
+          },
+          {
+            "popup": {
+              "type": "action",
+              "text": "Sekarang, mari uji kefahaman anda dengan soalan ringkas.",
+              "buttons": [{ "text": "Ujian Ringkas" }]
+            }
+          },     {
+            "video": { "src": "/videos/blank.mp4" }
+          },
+          {
+            "popup": {
+              "question": "Mana satu contoh fikiran positif?",
+              "options": [
+                {
+                  "text": "Aku tak cukup pandai.",
+                  "feedback": "Ini fikiran negatif. Cuba lagi."
+                },
+                {
+                  "text": "Aku mampu belajar dari kesilapan.",
+                  "feedback": "Hebat! Anda faham konsep ini."
+                }
+              ],
+              "showContinue": true
+            }
+          },
+          {
+            "video": { "src": "/videos/berhenti/VIDEO3_4.mp4" }
+          }         
+        ]
+      }
+    ]
+  }
+  

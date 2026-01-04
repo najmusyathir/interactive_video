@@ -1,0 +1,71 @@
+{
+    "videos": [
+      {
+        "flows": [
+          { "video": { "src": "/videos/berhenti/VIDEO4_1.mp4" } },
+          {
+            "popup": {
+              "type": "action",
+              "buttons": [{ "text": "Teruskan" }]
+            }
+          },
+          { "video": { "src": "/videos/berhenti/VIDEO4_2.mp4" } },
+          {
+            "popup": {
+              "text": "Apakah pemikiran pertama yang muncul di fikiran anda?",
+              "options": [
+                { "text": "Saya pasti akan gagal." },
+                { "text": "Saya tidak cukup bijak untuk tugasan ini." },
+                { "text": "Orang lain lebih hebat daripada saya." }
+              ],
+              "showContinue": true
+            }
+          },
+          { "video": { "src": "/videos/berhenti/VIDEO4_3.mp4" } },
+          {
+            "popup": {
+              "text": "Pemikiran ini adalah...",
+              "buttons": [
+                { "text": "Berdasarkan Fakta" },
+                { "text": "Berdasarkan Andaian" }
+              ],
+              "feedback": "Kebanyakan pemikiran cemas adalah andaian, bukan fakta sebenar.",
+              "showContinue": true
+            }
+          },
+          { "video": { "src": "/videos/berhenti/VIDEO4_4.mp4" } },
+          {
+            "popup": {
+              "options": [
+                { "text": "Saya berasa risau, tetapi itu tidak bermaksud saya akan gagal." },
+                { "text": "Saya masih boleh belajar dan memperbaiki diri." },
+                { "text": "Saya pernah menghadapi situasi sukar sebelum ini." }
+              ],
+              "text": "Pemikiran ini membantu menurunkan reaksi cemas.",
+              "showContinue": true
+            }
+          },
+          { "video": { "src": "/videos/berhenti/VIDEO4_5.mp4" } },
+          {
+            "popup": {
+              "text": "Bagaimana perasaan anda selepas menukar pemikiran?",
+              "options": [
+                { "text": "Lebih tenang" },
+                { "text": "Lebih yakin" },
+                { "text": "Masih sedikit risau" }
+              ],
+              "showContinue": true
+            }
+          },
+          { "video": { "src": "/videos/berhenti/VIDEO4_6.mp4" } },
+          {
+            "popup": {
+              "type": "action",
+              "buttons": [{ "text": "Tutup" }]
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

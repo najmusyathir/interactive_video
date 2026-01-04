@@ -1,8 +1,8 @@
 "use client"
 import VideoModal from "@/components/video-modal";
-import video1 from "@/lib/interactive video/1.json";
-import video2 from "@/lib/interactive video/2.json";
-import video3 from "@/lib/interactive video/3.json";
+import video1 from "@/lib/interactive video/penyahpekaan.json";
+import video2 from "@/lib/interactive video/berhenti.json";
+import video3 from "@/lib/interactive video/menstruktur.json";
 
 import Image from "next/image";
 import { useState } from "react";
