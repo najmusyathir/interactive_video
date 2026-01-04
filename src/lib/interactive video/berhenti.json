@@ -49,23 +49,7 @@
         },
         {
           "popup": {
-            "type": "action",
-            "text": "Sekarang, mari uji kefahaman anda dengan soalan ringkas.",
-            "buttons": [
-              {
-                "text": "Ujian Ringkas"
-              }
-            ]
-          }
-        },
-        {
-          "video": {
-            "src": "/videos/blank.mp4"
-          }
-        },
-        {
-          "popup": {
-            "question": "Mana satu contoh fikiran positif?",
+            "question": "Sekarang, mari uji kefahaman anda dengan soalan ringkas. Mana satu contoh fikiran positif?",
             "options": [
               {
                 "text": "Aku tak cukup pandai.",
