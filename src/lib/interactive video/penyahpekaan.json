@@ -50,22 +50,7 @@
                 },
                 {
                     "popup": {
-                        "text": "Sekarang cuba lakukan pernafasan ini sendiri. Bila sudah selesai, tekan butang di bawah.",
-                        "options": [
-                            {
-                                "text": "Saya Dah Cuba",
-                                "feedback": "Bagus! Relaksasi membantu tubuh menjadi lebih tenang. Mari kita teruskan."
-                            }
-                        ],
-                        "showContinue": true
-                    }
-                },
-                {
-                    "video": { "src": "/videos/blank.mp4" }
-                  },
-                {
-                    "popup": {
-                        "question": "Selepas mencuba latihan tersebut, bagaimana perasaan anda?",
+                        "question": "Sekarang cuba lakukan pernafasan ini sendiri. Bila sudah selesai, tekan butang di bawah dan nyatakan bagaimana perasaan anda?",
                         "options": [
                             {
                                 "text": "Tenang",
