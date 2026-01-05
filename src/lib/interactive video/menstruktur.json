@@ -10,6 +10,7 @@
         {
           "popup": {
             "type": "action",
+            "text": "Teruskan ke video seterusnya",
             "buttons": [
               {
                 "text": "Teruskan"
@@ -50,15 +51,16 @@
         {
           "popup": {
             "text": "Pemikiran ini adalah...",
-            "buttons": [
+            "options": [
               {
-                "text": "Berdasarkan Fakta"
+                "text": "Berdasarkan Fakta",
+                "feedback": "Kebanyakan pemikiran cemas adalah andaian, bukan fakta sebenar."
               },
               {
-                "text": "Berdasarkan Andaian"
+                "text": "Berdasarkan Andaian",
+                "feedback": "Kebanyakan pemikiran cemas adalah andaian, bukan fakta sebenar."
               }
             ],
-            "feedback": "Kebanyakan pemikiran cemas adalah andaian, bukan fakta sebenar.",
             "showContinue": true
           }
         },
@@ -69,18 +71,19 @@
         },
         {
           "popup": {
+            "text":"Bagaimana perasaan anda selepas menukar pemikiran?",
             "options": [
               {
-                "feedback": "Pemikiran ini membantu menurunkan reaksi cemas.",
-                "text": "Saya berasa risau, tetapi itu tidak bermaksud saya akan gagal."
+                "text": "Saya berasa risau, tetapi itu tidak bermaksud saya akan gagal.",
+                "feedback": "Pemikiran ini membantu menurunkan reaksi cemas."
               },
               {
                 "feedback": "Pemikiran ini membantu menurunkan reaksi cemas.",
                 "text": "Saya masih boleh belajar dan memperbaiki diri."
               },
               {
-                "feedback": "Pemikiran ini membantu menurunkan reaksi cemas.",
-                "text": "Saya pernah menghadapi situasi sukar sebelum ini."
+                "text": "Saya pernah menghadapi situasi sukar sebelum ini.",
+                "feedback": "Pemikiran ini membantu menurunkan reaksi cemas."
               }
             ],
             "showContinue": true
@@ -97,15 +100,15 @@
             "options": [
               {
                 "text": "Lebih tenang",
-                "feedback": "Lebih tenang"
+                "feedback": "Bagus. Ini menunjukkan pemikiran yang lebih realistik membantu menenangkan emosi."
               },
               {
                 "text": "Lebih yakin",
-                "feedback": "Lebih yakin"
+                "feedback": "Tahniah. Keyakinan boleh meningkat apabila kita berjaya mengawal pemikiran negatif."
               },
               {
                 "text": "Masih sedikit risau",
-                "feedback": "Masih sedikit risau"
+                "feedback": "Tidak mengapa. Perubahan pemikiran memerlukan latihan dan masa."
               }
             ],
             "showContinue": true
