@@ -22,8 +22,15 @@ export default function Accardion({
           >
             {Array.isArray(item.answer) ? (
               <ul className="list-disc pl-6 space-y-2">
-                {item.answer.map((point: string, i: number) => (
-                  <li key={i}>{point}</li>
+                {item.answer.map((point: any, i: number) => (
+                  <li key={i}>
+                    {point.text}
+                    {point.link && (
+                      <a href={point.link} target="_blank" className="text-blue-600 underline ml-1">
+                        (link)
+                      </a>
+                    )}
+                  </li>
                 ))}
               </ul>
             ) : (
