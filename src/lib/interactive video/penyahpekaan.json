@@ -65,7 +65,7 @@
                                 "feedback": "Tidak mengapa. Mulakan dengan langkah yang lebih ringan dahulu. Setiap individu mempunyai kadar penyesuaian yang berbeza."
                             }
                         ],
-                        "autoNext": true
+                        "showContinue": true
                     }
                 },
                 {
