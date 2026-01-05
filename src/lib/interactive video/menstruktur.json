@@ -71,7 +71,7 @@
         },
         {
           "popup": {
-            "text":"Bagaimana perasaan anda selepas menukar pemikiran?",
+            "question":"Bagaimana perasaan anda selepas menukar pemikiran?",
             "options": [
               {
                 "text": "Saya berasa risau, tetapi itu tidak bermaksud saya akan gagal.",
