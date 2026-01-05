@@ -10,6 +10,7 @@
         {
           "popup": {
             "type": "action",
+            "text": "Teruskan ke video seterusnya",
             "buttons": [
               {
                 "text": "Teruskan"
@@ -53,7 +54,7 @@
             "options": [
               {
                 "text": "Aku tak cukup pandai.",
-                "feedback": "Ini fikiran negatif. Cuba lagi."
+                "feedback": "Ini fikiran negatif. Fikiran yang positif adalah 'Aku mampu belajar dari kesilapan."
               },
               {
                 "text": "Aku mampu belajar dari kesilapan.",

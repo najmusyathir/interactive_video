@@ -104,9 +104,11 @@ export default function VideoModal({ data, onClose }: { data: any; onClose: () =
 
           {showPopup && currentPopup && (
             <div className="absolute inset-0 bg-black flex flex-col justify-center items-center p-6 gap-4 text-white">
-              <h3 className="text-xl text-center">
-                {afterPopup ? afterPopup.text : currentPopup.question || currentPopup.text}
-              </h3>
+
+              {!feedback &&
+                <h3 className="text-xl text-center">
+                  {afterPopup ? afterPopup.text : currentPopup.question || currentPopup.text}
+                </h3>}
 
               {!feedback && !afterPopup && currentPopup.options?.map((opt: any, i: number) => (
                 <button
@@ -130,7 +132,7 @@ export default function VideoModal({ data, onClose }: { data: any; onClose: () =
 
               {feedback && (
                 <>
-                  <p className="text-center max-w-xl">{feedback}</p>
+                  <p className="text-center text-xl max-w-xl">{feedback}</p>
                   {currentPopup.showContinue && (
                     <button
                       onClick={handleButtonClick}

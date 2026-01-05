@@ -11,9 +11,18 @@
     {
         "question": "Video & Infografik Tambahan",
         "answer": [
-            "Pengenalan CBT – YouTube (5 minit)",
-            "Infografik CBT – Verywell Mind",
-            "Panduan CBT – PsychCentral"
+            {
+                "text": "Pengenalan CBT – YouTube (5 minit)",
+                "link": "https://www.youtube.com/watch?v=XdcBMTlT61c&t=37s"
+            },
+            {
+                "text": "Infografik CBT – Verywell Mind",
+                "link": "https://www.verywellmind.com/what-is-cognitive-behavior-therapy-2795747"
+            },
+            {
+                "text": "Panduan CBT – PsychCentral",
+                "link": "https://psychcentral.com/lib/in-depth-cognitive-behavioral-therapy"
+            }
         ]
     }
 ]
