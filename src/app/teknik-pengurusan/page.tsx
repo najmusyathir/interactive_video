@@ -13,21 +13,21 @@ export default function TeknikPengurusan() {
   const steps = [
     {
       id: 1,
-      img: "/images/bg-penyahpekaan-sistematik.webp",
+      img: "/images/bg-penyahpekaan-sistematik.png",
       title: "Penyahpekaan Sistematik",
       desc: "Berhadapan dengan situasi cemas secara berperingkat, bermula dari mudah hingga sukar, supaya rasa takut beransur kurang.",
       video: video1,
     },
     {
       id: 2,
-      img: "/images/bg-berhenti-berfikir.webp",
+      img: "/images/bg-berhenti-berfikir.png",
       title: "Berhenti Berfikir",
       desc: "Menghentikan fikiran negatif dengan teknik kawalan mental untuk menenangkan diri secara aktif.",
       video: video2,
     },
     {
       id: 3,
-      img: "/images/bg-mengstrucktur-semula-kognitif.webp",
+      img: "/images/bg-mengstrucktur-semula-kognitif.png",
       title: "Mengstruktur Semula Kognitif",
       desc: "Menilai semula pemikiran yang salah dan menggantikannya dengan yang lebih rasional dan positif.",
       video: video3,
